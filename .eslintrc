@@ -5,30 +5,31 @@
     "react"
   ],
   "env": {
-    "browser": true,
     "es6": true,
+    "browser": true,
+    "node": true,
     "jquery": true,
     "mocha": true
-    "node": true,
   },
   "ecmaFeatures": {
     "jsx": true,
     "modules": true
   },
   "rules": {
-    "eol-last": 0,
-    "jsx-quotes": 1,
-    "no-alert": 0,
-    "no-console": 1,
-    "no-debugger": 1,
-    "no-lone-blocks": 0,
-    "no-trailing-spaces": 0,
-    "no-underscore-dangle": 0,
-    "no-unused-vars": 0,
-    "no-var": 1,
     "quotes": 0,
-    "react/display-name": [ 1, {"acceptTranspilerName": true }],
-    "react/forbid-prop-types": [1, {"forbid": "any"}],
+    "no-console": 0,
+    "no-debugger": 1,
+    "no-var": 1,
+    "semi": [1, "always"],
+    "no-trailing-spaces": 0,
+    "eol-last": 0,
+    "no-unused-vars": 2,
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0,
+    "jsx-quotes": 1,
+    "react/display-name": [ 1, {"ignoreTranspilerName": true }],
+    "react/forbid-prop-types": [1, {"forbid": ["any"]}],
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 0,
     "react/jsx-curly-spacing": 1,
@@ -58,7 +59,6 @@
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
     "react/wrap-multilines": 1
-    "semi": [1, "always"],
   },
   "globals": {
   }

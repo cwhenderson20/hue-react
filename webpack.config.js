@@ -1,7 +1,7 @@
-import webpack from 'webpack';
-import path from 'path';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const developmentEnvironment = 'development';
 const productionEnvironment = 'production';
@@ -98,4 +98,4 @@ function getConfig(env) {
   };
 }
 
-export default getConfig;
+module.exports = getConfig;

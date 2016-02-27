@@ -1,12 +1,12 @@
-import Express from 'express';
-import bodyParser from 'body-parser';
-import path from 'path';
+const Express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 // Webpack Requirements
-import webpack from 'webpack';
-import webpackConfigBuilder from '../webpack.config';
-import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
+const webpack = require('webpack');
+const webpackConfigBuilder = require('../webpack.config');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
 
 // Initialize Express
 const app = new Express();
